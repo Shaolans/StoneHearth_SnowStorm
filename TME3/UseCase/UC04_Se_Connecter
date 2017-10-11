@@ -1,0 +1,43 @@
+UC04: Se connecter
+
+Auteurs : Arts Adrien et Trublereau Christopher
+
+Acteur : Visiteur
+
+Description : Permet à l'acteur de se connecter au système.
+
+Précontidions : Aucune.
+
+Scénario Nominal :
+	1. L'acteur selectionne "Se connecter".
+	2. Le système affiche "Saisir pseudo".
+	3. L'acteur saisit son pseudo.
+	4. Le système vérifie si le pseudo existe.
+	5. Le système affiche "Saisir mot de passe".
+	6. L'acteur saisit son mot de passe.
+	7. Le système vérifie si le mot de passe est associé au pseudo.
+	8. Le système affiche "Connexion réussie".
+	
+
+Post-conditions : L'acteur Visiteur devient un acteur Joueur.
+
+
+Alternatives :
+
+	A1. Pseudo incorrect :
+		En SN4, si le pseudo n'existe pas, alors :
+		
+		A1.1. Retour en SN2.
+		
+	A2. Mot de passe incorrect :
+		En SN7, si le mot de passe n'est pas associé au pseudo, alors :
+		
+		A2.1. Retour en SN5.
+		
+		
+Exceptions :
+
+	E1. Annulation :
+		En SN3 ou SN6, si l'acteur annule :
+		
+		E1.1. Fin d'interaction.

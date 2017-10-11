@@ -1,0 +1,49 @@
+UC03: Créer un compte
+
+Auteurs : Arts Adrien et Trublereau Christopher
+
+Acteur : Visiteur
+
+Description : Permet à l'acteur de créer un compte.
+
+Préconditions : L'acteur ne doit pas être connecté.
+
+Scénario Nominal :
+	1. L'acteur selectionne "Créer un compte".
+	2. Le système affiche "Choisir pseudo".
+	3. L'acteur saisit son pseudo.
+	4. Le système vérifie si le pseudo n'est pas déjà utilisé.
+	5. Le système affiche "Choisir mot de passe".
+	6. L'acteur saisit son mot de passe.
+	7. Le système demande "Renseigner carte ?"
+	8. L'acteur refuse de renseigner sa carte.
+	9. Le système enregistre le compte du visiteur et affiche "Compte créé".
+	
+
+Post-conditions :
+	Le système a bien enregistré les données suivantes : - Pseudo de l'utilisateur.
+														 - Mot de passe de l'utilisateur.
+														 
+
+Alternatives :
+
+	A1. Pseudo déjà utilisé :
+		En SN4, si le pseudo est déjà utilisé, alors :
+		
+		A.1.1 Retour en SN2.
+
+	A2. Renseignement coordonnées bancaires :
+		En SN8, si l'acteur accepte de renseigner sa carte, alors :
+		
+		A.2.1. Appel de UC02 : <<Renseigner CB>>.
+		A.2.2. Retour en SN9.
+		
+		
+Exceptions :
+
+	E1. Annulation :
+		En SN2 ou SN5, si l'acteur annule :
+		
+		E1.1. Fin d'interaction.
+		
+	
