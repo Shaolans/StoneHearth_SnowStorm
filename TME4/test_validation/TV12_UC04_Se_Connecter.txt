@@ -1,0 +1,23 @@
+Auteurs: Chao LIN - Ling-Chun SO
+
+Titre: Se connecter avec pseudo erroné
+Contexte:
+	"Bob" a déja créer son compte (UC_03)
+	"Bob" souhaite se connecter
+Entrée:
+	Pseudo = "Bobbbbb"
+	MDP = "Bab"
+	Pseudo = "Bob"
+	MDP = "Bab"
+Scénario:
+	1. L'acteur selectionne "Se connecter".
+	2. L'acteur saisit son pseudo.
+	3. L'acteur saisit son mot de passe.
+	4. L'acteur saisit son pseudo.
+	5. L'acteur saisit son mot de passe.
+Resultat attendu:
+	Connection de "Bob" réussi, "Bob" accède à son compte
+Moyens de vérification:
+	Visuel => affichage de confirmation
+		   => affichage de l'interface d'accueil du jeu
+	

@@ -1,0 +1,18 @@
+Auteurs: Chao LIN - Ling-Chun SO
+
+Titre: Effectuer un achat Nominal
+Contexte:
+	Le joueur "Bob" est connecté (cas nominal du TV de UC_04)
+	Coordonée bancaire de Bob renseigné
+Entrée:
+	Cryptogramme = "740"
+Scénario:
+	1.L'acteur selectionne "Boutique"
+	2.L'acteur choisit "Acheter emplacement"
+	3.L'acteur valide son achat
+	4.L'acteur saisit son cryptogramme
+Resultat attendu:
+	Un achat a été effectué, article reçu (emplacement supplémentaire)
+Moyens de vérification:
+	Visuel => affichage de confirmation d'achat
+		   => emplacement supplémentaire dans l'interface de deck
