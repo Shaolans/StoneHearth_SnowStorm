@@ -3,7 +3,7 @@ Auteurs: Chao LIN - Ling-Chun SO
 Titre: Achat avec les coordonées bancaires non renseignées
 Contexte:
 	Le joueur "Bob" est connecté (cas nominal du TV de UC_04)
-	Coordonée bancaire de Bob non renseigné
+	Coordonées bancaires de Bob non renseignées
 Entrée:
 	Carte Bancaire = "4242424242424242"
 	Date expiration = "11/17"
