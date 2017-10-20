@@ -1,0 +1,15 @@
+Auteurs: Chao LIN
+
+Titre: Se déconnecter Nominal
+Contexte:
+	Le joueur "Bob" s'est déjà connecté et il souhaite se déconnecter.
+Entrée:
+Scénario:
+	1. L'acteur selectionne "Se déconnecter".
+	2. L'acteur accepte.
+Resultat attendu:
+	Le compte de "Bob" est déconnecter du jeu. 
+Moyens de vérification:
+	Visuel => affichage de confirmation
+	Le joueur "Bob" devient un visiteur.
+	
