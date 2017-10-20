@@ -1,4 +1,4 @@
-Auteur: Alexandre DOUSSOT
+Auteur: Alexandre DOUSSOT (modifie par Ling-Chun SO)
 
 Titre: Ouvrir pack de cartes Nominal
 Contexte:
@@ -7,12 +7,12 @@ Entrée:
   Pack: "Pack1"
   Cartes = {"Carte1", "Carte2", "Carte3", "Carte4", "Carte5"}
 Scénario:
-  1. L'acteur sélectionne "Liste de Packs"
-  2. L'acteur sélectionne le pack de son choix.
+  1. L'acteur sélectionne "Ouvrir"
+  2. L'acteur sélectionne le pack1
   3. L'acteur décline l'ouverture d'un autre pack
 Résultat attendu:
   Ouverture effectuée, Cartes reçues, Pack1 disparu
 Moyens de vérification:
-  Visuel => Cartes présentes dans la collection
+  Visuel => Cartes présentes dans la collection (dont une rare au moins)
          => Pack1 disparu de la collection
   

@@ -1,11 +1,11 @@
-Auteur: Alexandre DOUSSOT
+Auteur: Alexandre DOUSSOT (modifie Ling-Chun SO)
 
 Titre: Ouvrir pack de cartes sans pack
 Contexte:
   La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
 Entrée:
 Scénario:
-  1. L'acteur sélectionne "Liste de Packs"
+  1. L'acteur sélectionne "Ouvrir"
 Résultat attendu:
   Ouverture non effectuée
 Moyens de vérification:
