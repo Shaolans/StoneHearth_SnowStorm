@@ -5,7 +5,7 @@ Contexte:
   La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
 Entrée:
 Scénario:
-  1. L'acteur sélectionne "Ouvrir"
+  1. L'acteur sélectionne "Ouvrir pack"
 Résultat attendu:
   Ouverture non effectuée
 Moyens de vérification:

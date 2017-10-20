@@ -3,11 +3,10 @@ Auteur: Alexandre DOUSSOT (modifie Ling-Chun SO)
 Titre: Ouvrir plusieurs pack de cartes
 Contexte:
   La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
+  Pack1,Pack2 de cartes existant dans la base de données
+  La joueuse possède le pack1 et le pack2 (TV02 de UC01)
+  Base de données des cartes chargées
 Entrée:
-  Pack1: Pack
-  Pack2: Pack
-  Cartes1 = {"Carte1", "Carte2", "Carte3", "Carte4", "Carte5"}
-  Cartes2 = {"Carte6", "Carte7", "Carte8", "Carte9", "Carte10"}
 Scénario:
   1. L'acteur sélectionne "Ouvrir Pack"
   2. L'acteur sélectionne Pack1
@@ -17,7 +16,8 @@ Scénario:
 Résultat attendu:
   Ouverture effectuée, Cartes1 et Cartes2 reçues, Pack1 et Pack2 disparus
 Moyens de vérification:
-  Visuel => Cartes1 présentes dans la collection (dont au moins une rare)
+  Visuel => Affichages des cartes obtenues
+         => Cartes1 présentes dans la collection (dont au moins une rare)
          => Cartes2 présentes dans la collection (dont au moins une rare)
          => Pack1 disparu de la collection
          => Pack2 disparu de la collection

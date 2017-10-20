@@ -3,9 +3,10 @@ Auteur: Alexandre DOUSSOT (modifie par Ling-Chun SO)
 Titre: Ouvrir pack de cartes Nominal
 Contexte:
   La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
+  La joueuse possède le pack1 (TV02 de UC01)
+  Pack1 de cartes existant dans la base de données
+  Base de données des cartes chargées
 Entrée:
-  Pack: "Pack1"
-  Cartes = {"Carte1", "Carte2", "Carte3", "Carte4", "Carte5"}
 Scénario:
   1. L'acteur sélectionne "Ouvrir"
   2. L'acteur sélectionne le pack1
@@ -13,6 +14,7 @@ Scénario:
 Résultat attendu:
   Ouverture effectuée, Cartes reçues, Pack1 disparu
 Moyens de vérification:
-  Visuel => Cartes présentes dans la collection (dont une rare au moins)
+  Visuel => Affichages des cartes obtenues
+         => Cartes présentes dans la collection (dont une rare au moins)
          => Pack1 disparu de la collection
   
