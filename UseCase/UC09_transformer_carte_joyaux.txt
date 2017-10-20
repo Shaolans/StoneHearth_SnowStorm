@@ -10,7 +10,7 @@ Précondition:
 	Le joueur doit être connecté
 	
 Scénario Nominal:
-	1.L'acteur choisit de transformer des cartes en joyaux
+	1.L'acteur selectionne "transformer joyaux"
 	2.Le système vérifie que l'acteur possède au moins une carte non basique
 	3.Le système affiche les cartes non basiques et propose de détruire une carte
 	4.L'acteur choisit une carte à transformer et valide

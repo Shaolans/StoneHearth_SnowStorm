@@ -9,14 +9,14 @@ Description: Le joueur compose/modifie/supprimme un deck
 Précondition: Le joueur doit être connecté
 
 Scénario Nominal:
-	1.L'acteur choisit de gérer son deck
+	1.L'acteur selectionne "Gerer deck"
 	2.Le système affiche une selection "1.Composer deck
 										2.Modifier deck
 										3.Supprimer deck"
 	3.L'acteur choisit de composer son deck
 	4.Le système vérifie que le nombre de deck < max_decks (nombre de decks débloqué)
 	5.Le systeme affiche "Nom deck"
-	6.L'acteur saisit le nom du deck
+	6.L'acteur saisit le nom du deck et valide
 	7.Le système affiche toutes les cartes disponibles et "Choisissez 30 cartes sans doublon"
 	8.L'acteur selectionne 30 cartes et valide
 	9.Le système vérifie que l'acteur sélectionne 30 cartes sans doublons

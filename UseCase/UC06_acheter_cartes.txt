@@ -10,7 +10,7 @@ Précondition:
 	Le joueur doit être connecté
 	
 Scénario Nominal:
-	1.L'acteur choisit d'acheter une carte
+	1.L'acteur selectionne "Acheter carte"
 	2.Le système affiche la liste de tous les cartes disponibles
 	3.L'acteur choisit une carte et valide
 	4.Le système vérifie si l'acteur possède assez de joyaux

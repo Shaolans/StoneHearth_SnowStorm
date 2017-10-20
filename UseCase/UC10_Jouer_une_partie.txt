@@ -10,7 +10,7 @@ Précondition:
 	Le joueur doit être connecté
 	
 Scénario Nominal:
-	1.L'acteur choisit de jouer une partie
+	1.L'acteur selectionner "Jouer"
 	2.Le système affiche "choisissez un deck" et liste les decks de l'acteur
 	3.L'acteur choisit un deck et valide
 	4.Le système affiche "Recherche d'un adversaire"

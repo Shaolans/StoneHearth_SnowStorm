@@ -10,7 +10,7 @@ Précondition:
 	Le joueur doit être connecté
 
 Scénario Nominal:
-	1.L'acteur choisit d'afficher les packs qu'il possède
+	1.L'acteur selectionne "Ouvrir pack"
 	2.Le système verifie que l'acteur possède au moins un pack de cartes
 	3.Le système affiche les packs et le nombre de packs disponibles
 	4.L'acteur choisit le pack à ouvrir
