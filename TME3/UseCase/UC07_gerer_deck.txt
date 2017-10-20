@@ -1,0 +1,59 @@
+UC07 - Gérer deck
+
+Redacteur: Chao LIN - Ling-Chun SO
+
+Acteur: Joueur
+
+Description: Le joueur compose/modifie/supprimme un deck
+
+Précondition: Le joueur doit être connecté
+
+Scénario Nominal:
+	1.L'acteur choisit de gérer son deck
+	2.Le système affiche une selection "1.Composer deck
+										2.Modifier deck
+										3.Supprimer deck"
+	3.L'acteur choisit de composer son deck
+	4.Le système vérifie que le nombre de deck < max_decks (nombre de decks débloqué)
+	5.Le systeme affiche "Nom deck"
+	6.L'acteur saisit le nom du deck
+	7.Le système affiche toutes les cartes disponibles et "Choisissez 30 cartes sans doublon"
+	8.L'acteur selectionne 30 cartes et valide
+	9.Le système vérifie que l'acteur sélectionne 30 cartes sans doublons
+	10.Le système enregistre le deck
+	11.Le système enregistre les modifications dans la collection
+
+Postcondition:
+Les decks ne possèdent pas de doublons
+La collection de decks a été mis à jour
+le nombre de decks du joueur <= max_decks
+
+Alternative:
+A1: Modifier deck
+	En SN3, si l'acteur choisit de modifier deck
+	A1.1.Le système affiche les decks disponibles
+	A1.2.L'acteur choisit le deck à modifier
+	A1.3.Retour en SN7
+
+A2: Supprimer deck
+	En SN3, si l'acteur choisit de supprimer un deck
+	A2.1.Le système affiche les decks disponibles
+	A2.2.L'acteur choisit le deck à supprimer
+	A2.3.Le système supprime le deck
+	A2.4.Retour SN11
+	
+A3: Deck avec doublons
+	En SN9, si l'acteur a choisit des doublons
+	A3.1.Retour en SN7
+	
+Exception:
+E1: Nombre de decks max atteint
+	En SN4, si le nombre de deck = max_decks
+	E1.1.Le système affiche "Nombre de deck maximum atteint, veuillez acheter d'autres emplacements"
+	E1.2.Fin d'interaction
+	
+E2: Annulation
+	En SN3/SN6 ou SN8, l'acteur annule l'opération
+	E2.1.Fin d'interaction
+	
+

@@ -1,0 +1,41 @@
+UC09 - Transformer carte en joyaux
+
+Redacteur: Chao LIN - Ling-Chun SO
+
+Acteur: Joueur
+
+Description: Le joueur détruit une carte pour obtenir des joyaux
+
+Précondition:
+	Le joueur doit être connecté
+	
+Scénario Nominal:
+	1.L'acteur choisit de transformer des cartes en joyaux
+	2.Le système vérifie que l'acteur possède au moins une carte non basique
+	3.Le système affiche les cartes non basiques et propose de détruire une carte
+	4.L'acteur choisit une carte à transformer et valide
+	5.Le système retire la carte de la collection
+	6.Le système crédite des joyaux à l'acteur (commune = 2, rare = 5, legendaire = 20)
+	7.Le système affiche "Voulez-vous transformer une autre carte ?"
+	8.L'acteur décline
+
+Postcondition:
+Le joueur gagne des joyaux
+La collection de decks a été mis à jour (retrait de cartes)
+
+Alternative:
+A1: Détruire une autre carte
+	En SN8, si l'acteur accepte de détruire une autre carte
+	A1.1.Retour en SN2
+	
+Exception:
+E1: Pas de carte non basique
+	En SN2, si l'acteur ne possède pas de carte non basique
+	E1.1.Le système affiche "Vous n'avez pas de cartes spéciale, veuillez vous-en fournir dans notre boutique"
+	E1.2.Fin d'interaction
+	
+E2: Annulation
+	En SN3/SN7, l'acteur annule l'opération
+	E2.1.Fin d'interaction
+	
+

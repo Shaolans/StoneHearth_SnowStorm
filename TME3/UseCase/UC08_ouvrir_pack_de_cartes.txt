@@ -1,0 +1,42 @@
+UC08 - Ouvrir pack de cartes
+
+Redacteur: Chao Lin - Ling-Chun SO
+
+Acteur: Joueur
+
+Description: Le joueur ouvre un pack de cartes préalablement acheté
+
+Précondition: 
+	Le joueur doit être connecté
+
+Scénario Nominal:
+	1.L'acteur choisit d'afficher les packs qu'il possède
+	2.Le système verifie que l'acteur possède au moins un pack de cartes
+	3.Le système affiche les packs et le nombre de packs disponibles
+	4.L'acteur choisit le pack à ouvrir
+	5.Le système affiche les 5 cartes obtenues
+	6.Le système ajoute les cartes dans sa collection de cartes
+	8.Le système affiche "Ouvrir un autre pack ?"
+	9.L'acteur décline
+
+
+Postcondition:
+Les cartes sont ajoutés dans sa collection
+Le joueur perd un pack
+
+Alternative:
+	A1: Ouvrir plusieurs packs
+	En SN9, l'acteur choisit d'ouvrir d'autres packs
+	A1.1 Retour SN2
+
+Exception:
+E1: Pas de pack
+	En SN2, si le joueur n'a pas de pack
+	E1.1.Le système affiche "Pas de pack disponible, passez par la boutique"
+	E1.2.Fin d'interaction
+	
+E2: Annulation
+	En SN4, l'acteur annule l'opération
+	E2.1.Fin d'interaction
+	
+

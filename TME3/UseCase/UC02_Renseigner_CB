@@ -1,0 +1,42 @@
+UC02: Renseigner CB
+
+Auteurs : Arts Adrien et Trublereau Christopher
+
+Acteur : Joueur ou Visiteur
+
+Description : Permet à l'acteur de renseigner ses coordonnées de carte bleue.
+
+Préconditions : Le joueur doit être connecté.
+
+
+Scénario nominal :
+	1. L'acteur selectionne "Renseigner CB", par exemple comme une étape de UC01 : <<Effectuer achat>>.
+	2. Le système affiche "Numéro de carte ?".
+	3. L'acteur saisit son numéro de carte.
+	4. Le système vérifie qu'une carte est associée à ce numéro.
+	5. Le système affiche "Date d'expiration ?".
+	6. L'acteur saisit la date d'expiration de sa carte.
+	7. Le système vérifie que la date n'est pas dépassée.
+	8. Le système enregistre la carte bleue du joueur.
+
+
+Post-conditions : Le système a bien enregistré les coordonnées bancaires de l'acteur.
+
+Alternatives :
+	A1: Numéro de carte invalide :
+		En SN4, si aucune carte ne correspond à ce numéro :
+		
+		A1.1. Retour en SN2.
+		
+	A2: Date d'expiration invalide :
+		En SN7, si la date d'expiration a été dépassée :
+		
+		A1.1. Retour en SN5.
+		
+
+Exceptions :
+	E1: Annulation :
+		En SN3 ou SN6, si l'acteur annule :
+		
+		E1.1. Fin d'interaction. 
+	
