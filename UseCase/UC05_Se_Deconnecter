@@ -1,0 +1,27 @@
+UC04: Se déconnecter
+
+Auteurs : Arts Adrien et Trublereau Christopher
+
+Acteur : Joueur
+
+Description : Permet à l'acteur de se déconnecter du système.
+
+Précontidions : L'acteur doit être connecté.
+
+Scénario Nominal :
+	1. L'acteur selectionne "Se déconnecter".
+	2. Le système affiche "êtes-vous sûr de vous déconnecter ?".
+	3. L'acteur accepte.
+	4. Le système affiche "Déconnexion réussie".
+	
+
+Post-conditions : L'acteur Joueur devient un acteur Visiteur.
+
+Alternatives : Aucune.
+
+Exceptions :
+
+	E1. Annulation :
+		En SN3, si l'acteur annule :
+		
+		E1.1. Fin d'interaction.

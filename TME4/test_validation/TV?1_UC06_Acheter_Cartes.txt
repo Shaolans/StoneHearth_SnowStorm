@@ -1,0 +1,15 @@
+Auteur: Alexandre DOUSSOT
+
+Titre: Acheter une carte Nominal
+Contexte:
+  La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
+Entrée:
+  Carte = "Black Lotus"
+Scénario:
+  1. L'acteur sélectionne "Boutique de cartes"
+  2. L'acteur sélectionne la carte de son choix
+  3. L'acteur décline l'achat d'une autre carte
+Résultat attendu:
+  Un achat a été effectué, article reçu (Carte "Black Lotus")
+Moyens de vérification:
+  Visuel => carte présente dans la collection

@@ -1,0 +1,61 @@
+UC10 - Jouer une partie
+
+Redacteur: Chao LIN - Ling-Chun SO
+
+Acteur: Joueur
+
+Description: Le joueur choisit de lancer une partie
+
+Précondition:
+	Le joueur doit être connecté
+	
+Scénario Nominal:
+	1.L'acteur choisit de jouer une partie
+	2.Le système affiche "choisissez un deck" et liste les decks de l'acteur
+	3.L'acteur choisit un deck et valide
+	4.Le système affiche "Recherche d'un adversaire"
+	5.Le système cherche un adversaire de même rang ou avec une différence de 3 rangs
+	6.Le système lance une partie
+	7.Le système détermine que l'acteur est gagnant
+	8.Le système verifie le rang de l'acteur
+	9.Le système monte le rang de l'acteur
+	10.Le système incrémente le nombre de parties jouées de l'acteur
+	11.Le système vérifie si l'acteur peut avoir un pack de carte gratuit
+	12.Le système détermine que non
+	13.Le système affiche "Une autre partie ?"
+	14.L'acteur décline
+
+Postcondition:
+Une partie a été jouée (ajout dans nb_parties_jouees_jour)
+Le rang du joueur est dans l'intervalle de rang défini
+
+Alternative:
+A1: L'acteur a perdu la partie
+	En SN7, si le système determine que l'acteur est perdant
+	A1.1.Le système verifie le rang de l'acteur
+	A1.2.Le système décrémente le rang du joueur
+	A1.3.Retour SN10
+	
+A2:	L'acteur est au rang max
+	En SN8, si le rang de l'acteur = 100
+	A2.1.Retour SN10
+
+A3: L'acteur est au rang initial
+	En A1.1, si le rang de l'acteur = 0
+	A3.1.Retour SN10
+
+A4: 10 parties jouées
+	En SN11, le système determine qu'il peut recevoir un pack de cartes
+	A4.1.Le système incrémente le nombre de pack de cartes de l'acteur
+	A4.2.Retour SN13
+
+A5: L'acteur accepte la revanche
+	En SN14, l'acteur accepte
+	A5.1.Retour en SN2
+	
+Exception:
+E1: Annulation
+	En SN3/SN4, l'acteur annule l'opération
+	E2.1.Fin d'interaction
+	
+

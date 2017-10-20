@@ -1,0 +1,18 @@
+Auteurs: Chao LIN - Ling-Chun SO
+
+Titre: Achat avec solde insuffisant
+Contexte:
+	Le joueur "Bob" est connecté (cas nominal du TV de UC_04)
+	Coordonées bancaires de Bob renseignées
+Entrée:
+	Cryptogramme = "740"
+Scénario:
+	1.L'acteur selectionne "Boutique"
+	2.L'acteur choisit "Acheter emplacement"
+	3.L'acteur valide son achat
+	4.L'acteur saisit son cryptogramme
+Resultat attendu:
+	Achat non effectué
+Moyens de vérification:
+	Visuel => affichage d'echec d'achat
+		   => pas d'emplacement supplémentaire de deck dans la gestion deck

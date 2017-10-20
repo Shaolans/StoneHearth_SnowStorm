@@ -1,0 +1,22 @@
+Auteurs: Chao LIN - Ling-Chun SO
+
+Titre: Creer compte avec pseudo déja utilisé 
+Contexte:
+	Visiteur "Bob" souhaite créer un compte
+	Compte au nom de "Bob" déjà présent
+Entrée:
+	Pseudo = "Bob"
+	Pseudo = "Bob123"
+	MDP = "Bab"
+Scénario:
+	1.L'acteur selectionne "Créer compte"
+	3.L'acteur saisit son pseudo
+	4.L'acteur saisit son pseudo
+	5.L'acteur saisit son mot de passe
+	6.L'acteur décline le renseignement des coordonnées bancaires
+	
+Resultat attendu:
+	Création d'un compte avec le pseudo Bob123 et mdp Bab sans coordonnées bancaires
+Moyens de vérification:
+	Visuel => affichage de confirmation
+	Bob peut se connecter sur son compte (UC04) avec le pseudo "Bob123" et le mot de passe "Bab"

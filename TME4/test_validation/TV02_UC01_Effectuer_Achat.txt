@@ -1,0 +1,19 @@
+Auteurs: Chao LIN - Ling-Chun SO
+
+Titre: Acheter un pack
+Contexte:
+	Le joueur "Bob" est connecté (cas nominal du TV de UC_04)
+	Coordonées bancaires de Bob renseignées
+Entrée:
+	Cryptogramme = "740"
+Scénario:
+	1.L'acteur selectionne "Boutique"
+	2.L'acteur choisit "Acheter pack"
+	3.L'acteur valide son achat
+	4.L'acteur saisit son cryptogramme
+Resultat attendu:
+	Un achat a été effectué, article reçu (pack supplémentaire)
+Moyens de vérification:
+	Visuel => affichage de confirmation d'achat
+		   => pack supplémentaire ouvrable
+		   => bouton "ouvrir pack" non grisé

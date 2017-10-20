@@ -1,0 +1,18 @@
+Auteur: Alexandre DOUSSOT
+
+Titre: Ouvrir pack de cartes Nominal
+Contexte:
+  La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
+Entrée:
+  Pack: "Pack1"
+  Cartes = {"Carte1", "Carte2", "Carte3", "Carte4", "Carte5"}
+Scénario:
+  1. L'acteur sélectionne "Liste de Packs"
+  2. L'acteur sélectionne le pack de son choix.
+  3. L'acteur décline l'ouverture d'un autre pack
+Résultat attendu:
+  Ouverture effectuée, Cartes reçues, Pack1 disparu
+Moyens de vérification:
+  Visuel => Cartes présentes dans la collection
+         => Pack1 disparu de la collection
+  

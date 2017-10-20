@@ -1,0 +1,19 @@
+Auteurs: Chao LIN - Ling-Chun SO
+
+Titre: Creer compte Nominal
+Contexte:
+	Visiteur "Bob" souhaite créer un compte
+	Pas de compte au nom de "Bob"
+Entrée:
+	Pseudo = "Bob"
+	MDP = "Bab"
+Scénario:
+	1.L'acteur selectionne "Créer compte"
+	2.L'acteur saisit son pseudo
+	3.L'acteur saisit son mot de passe
+	4.L'acteur décline le renseignement des coordonnées bancaires
+Resultat attendu:
+	Création d'un compte avec le pseudo Bob et mdp Bab sans coordonnées bancaires
+Moyens de vérification:
+	Visuel => affichage de confirmation
+	Bob peut se connecter sur son compte (UC04) avec le pseudo "Bob" et le mot de passe "Bab"

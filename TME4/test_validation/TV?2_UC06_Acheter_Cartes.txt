@@ -1,0 +1,19 @@
+Auteur: Alexandre DOUSSOT
+
+Titre: Acheter plusieurs cartes
+Contexte:
+  La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
+Entrée:
+  Carte = "Black Lotus"
+  Carte = "Blue Eyes White Dragon"
+Scénario:
+  1. L'acteur sélectionne "Boutique de cartes"
+  2. L'acteur sélectionne la carte de son choix
+  3. L'acteur sélectionne "Acheter une autre carte"
+  4. L'acteur sélectionne la carte de son choix
+  5. L'acteur décline l'achat d'une autre carte
+Résultat attendu:
+  Deux achats ont été effectués, articles reçus 
+    (Carte "Black Lotus" et Carte "Blue Eyes White Dragon")
+Moyens de vérification:
+  Visuel => cartes présentes dans la collection

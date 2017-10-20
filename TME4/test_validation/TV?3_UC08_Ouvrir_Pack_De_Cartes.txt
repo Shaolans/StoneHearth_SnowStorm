@@ -1,0 +1,13 @@
+Auteur: Alexandre DOUSSOT
+
+Titre: Ouvrir pack de cartes sans pack
+Contexte:
+  La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
+Entrée:
+Scénario:
+  1. L'acteur sélectionne "Liste de Packs"
+Résultat attendu:
+  Ouverture non effectuée
+Moyens de vérification:
+  Visuel => affichage du message "Pas de pack disponible, passez par la boutique."
+  

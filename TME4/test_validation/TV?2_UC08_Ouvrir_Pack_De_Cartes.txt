@@ -1,0 +1,24 @@
+Auteur: Alexandre DOUSSOT
+
+Titre: Ouvrir plusieurs pack de cartes
+Contexte:
+  La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
+Entrée:
+  Pack1: Pack
+  Pack2: Pack
+  Cartes1 = {"Carte1", "Carte2", "Carte3", "Carte4", "Carte5"}
+  Cartes2 = {"Carte6", "Carte7", "Carte8", "Carte9", "Carte10"}
+Scénario:
+  1. L'acteur sélectionne "Liste de Packs"
+  2. L'acteur sélectionne Pack1
+  3. L'acteur sélectionne "Ouvrir un autre pack"
+  4. L'acteur sélectionne Pack2
+  3. L'acteur décline l'ouverture d'un autre pack
+Résultat attendu:
+  Ouverture effectuée, Cartes1 et Cartes2 reçues, Pack1 et Pack2 disparus
+Moyens de vérification:
+  Visuel => Cartes1 présentes dans la collection
+         => Cartes2 présentes dans la collection
+         => Pack1 disparu de la collection
+         => Pack2 disparu de la collection
+  

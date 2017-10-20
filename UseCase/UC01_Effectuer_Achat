@@ -1,0 +1,43 @@
+UC01: Effectuer un achat
+Auteurs : Arts Adrien et Trublereau Christopher
+Acteur : Joueur
+Description : Permet à l'acteur d'effectuer un achat.
+Préconditions : L'acteur doit être connecté.
+Scénario Nominal :
+1. L'acteur selectionne "Boutique".
+2. Le système affiche "Choisir article".
+3. L'acteur choisit "Acheter emplacement".
+4. Le système vérifie si l'acteur a enregistré sa carte bleue.
+5. Le système affiche le prix de l'article, et affiche "Valider achat ?".
+6. L'acteur valide son achat.
+7. Le système affiche "Cryptogramme ?"
+8. L'acteur saisit son cryptogramme.
+9. Le système demande autorisation à la banque.
+10. Le système délivre l'article et affiche "Achat validé".
+Post-conditions :
+L'acteur a été débité du montant correspondant à l'achat.
+L'acteur a bien reçu son article.
+
+Alternatives :
+A1. Achat d'un pack :
+En SN3, si l'acteur choisit "Acheter pack":
+
+A1.1. Retour SN4.
+
+A2. Carte non enregistrée :
+En SN4 si la carte n'a pas été enregistrée alors:
+
+A2.1. Executer UC02:<<Renseigner CB>>
+
+Exceptions :
+E1. Annulation par l'acteur :
+En SN2, SN6 ou SN8, si l'acteur annule, alors :
+
+E1.1. Fin d'interaction.
+
+E2. Argent insuffisant :
+En SN7, si la banque n'autorise pas l'achat, alors :
+
+E2.1. Le système affiche "Achat non autorisé".
+E2.2. Fin d'interaction.
+

@@ -1,0 +1,24 @@
+Auteurs: Chao LIN - Ling-Chun SO
+
+Titre: Achat avec les coordonées bancaires non renseignées
+Contexte:
+	Le joueur "Bob" est connecté (cas nominal du TV de UC_04)
+	Coordonées bancaires de Bob non renseignées
+Entrée:
+	Carte Bancaire = "4242424242424242"
+	Date expiration = "11/17"
+	Cryptogramme = "740"
+Scénario:
+	1.L'acteur selectionne "Boutique"
+	2.L'acteur choisit "Acheter emplacement"
+	3.L'acteur saisit son numéro de carte
+	4.L'acteur saisit la date d'expiration de sa carte
+	5.L'acteur valide son achat
+	6.L'acteur saisit son cryptogramme
+Resultat attendu:
+	Un achat a été effectué, article reçu (emplacement supplémentaire)
+	Coordonée bancaire renseignée
+Moyens de vérification:
+	Visuel => affichage de confirmation d'achat
+		   => emplacement supplémentaire dans l'interface de deck
+		   => interface "options compte" les coordonées bancaires y figurent

@@ -1,0 +1,38 @@
+UC06 - Acheter carte
+
+Redacteur: Chao LIN - Ling-Chun SO
+
+Acteur: Joueur
+
+Description: Le joueur choisit d'acheter des cartes avec ses joyaux
+
+Précondition:
+	Le joueur doit être connecté
+	
+Scénario Nominal:
+	1.L'acteur choisit d'acheter une carte
+	2.Le système affiche la liste de tous les cartes disponibles
+	3.L'acteur choisit une carte et valide
+	4.Le système vérifie si l'acteur possède assez de joyaux
+	5.Le système ajoute la carte dans la collection de l'acteur
+	6.Le système décrémente la quantité de joyaux
+	7.Le système affiche "Achat éffectué"
+	8.Le système affiche "Acheter une autre carte ?"
+	9.L'acteur décline
+
+Postcondition:
+Les cartes sont ajoutées dans la collection du joueur.
+
+Alternative:
+A1: L'acteur choisit d'acheter une autre carte
+	En SN8, l'acteur accepte
+	A1.1.Retour SN2
+
+Exception:
+E1: Annulation
+	En SN3, l'acteur annule l'opération
+	E1.1.Fin d'interaction
+
+E2: L'acteur n'a pas assez de joyaux
+	En SN4, pas assez de joyaux
+	E2.1.Fin d'interaction

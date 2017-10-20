@@ -1,0 +1,26 @@
+Auteurs: Chao LIN - Ling-Chun SO
+
+Titre: Creer compte avec renseignement des coordonnées bancaires
+Contexte:
+	Visiteur "Bob" souhaite créer un compte
+	Pas de compte au nom de "Bob"
+Entrée:
+	Pseudo = "Bob"
+	MDP = "Bab"
+	Carte Bancaire = "4242424242424242"
+	Date expiration = "11/17"
+Scénario:
+	1.L'acteur selectionne "Créer compte"
+	2.L'acteur saisit son pseudo
+	3.L'acteur saisit son mot de passe
+	4.L'acteur accepte de renseigner ses coordonnées bancaires
+	5.L'acteur saisit son numéro de carte
+	6.L'acteur saisit la date d'expiration de sa carte
+Resultat attendu:
+	Création d'un compte avec le pseudo Bob et mdp Bab avec coordonnées bancaires
+Moyens de vérification:
+	Bob peut se connecter sur son compte (UC04) avec le pseudo "Bob" et le mot de passe "Bab"
+	Visuel => affichage de confirmation
+	 	   => interface "options compte" les coordonées bancaires y figurent
+	
+	

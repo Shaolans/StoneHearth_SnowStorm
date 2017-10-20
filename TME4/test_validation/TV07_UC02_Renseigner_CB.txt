@@ -1,0 +1,21 @@
+Auteurs: Chao LIN - Ling-Chun SO
+
+Titre: Renseigner CB mauvaise saisie
+Contexte:
+	"Bob" veut renseigné sa CB
+	Coordonées bancaires de "Bob" non renseignées
+Entrée:
+	Carte Bancaire1 = "4242424242424242"
+	Date expiration = "11/17"
+	Date expiration = "12/17"
+Scénario:
+	1.L'acteur selectionne "Renseigner CB"
+	3.L'acteur saisit son numéro de carte Carte Bancaire1
+	4.L'acteur saisit la date d'expiration de sa carte
+	5.L'acteur saisit son numéro de carte Carte Bancaire2
+	6.L'acteur saisit la date d'expiration de sa carte
+Resultat attendu:
+	Coordonée bancaire renseignée
+Moyens de vérification:
+	Visuel => affichage de confirmation
+		   => interface "options compte" les coordonées bancaires y figurent
