@@ -1,0 +1,20 @@
+Auteur : ARTS Adrien
+
+Titre : Transformer carte en joyaux Pas de Cartes
+
+Contexte :
+	Le joueur ne possede pas de carte non basique.
+
+
+Entrée : 
+	aucune
+
+Scénario :
+	1. Le joueur selectionne "Transformer joyaux".
+
+
+Résultat attendu :
+	-le systeme affiche une collection vide
+
+Moyens de vérification :
+	- visuel
