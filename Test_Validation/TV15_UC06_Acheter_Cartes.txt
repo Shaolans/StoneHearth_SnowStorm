@@ -1,15 +1,19 @@
-Auteur: Alexandre DOUSSOT
+Auteur: Alexandre DOUSSOT (modifié par Chao LIN)
 
 Titre: Acheter une carte Nominal
 Contexte:
-  La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
+  La joueuse "Alice" est connectée (cas nominal du TV de UC_04), possède un nombre de joyaux >= 50
 Entrée:
-  Carte = "Black Lotus"
+  Carte rare = "Black Lotus"
 Scénario:
   1. L'acteur sélectionne "Boutique de cartes"
-  2. L'acteur sélectionne la carte de son choix
+  2. L'acteur sélectionne la carte rare "Black Lotus" et valide
   3. L'acteur décline l'achat d'une autre carte
 Résultat attendu:
-  Un achat a été effectué, article reçu (Carte "Black Lotus")
+  Un achat a été effectué, article reçu (Carte rare "Black Lotus")
+  Le nombre de joyaux diminue de 50
 Moyens de vérification:
-  Visuel => carte présente dans la collection
+  Visuel => confirmation
+  Lister les cartes que possède Alice
+  Afficher le solde de joyaux (nombre de joyaux diminué)
+  
