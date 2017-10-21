@@ -10,7 +10,7 @@ Précondition:
 	Le joueur doit être connecté
 	
 Scénario Nominal:
-	1.L'acteur selectionner "Jouer"
+	1.L'acteur sélectionne "Jouer"
 	2.Le système affiche "choisissez un deck" et liste les decks de l'acteur
 	3.L'acteur choisit un deck et valide
 	4.Le système affiche "Recherche d'un adversaire"
@@ -27,11 +27,11 @@ Scénario Nominal:
 
 Postcondition:
 Une partie a été jouée (ajout dans nb_parties_jouees_jour)
-Le rang du joueur est dans l'intervalle de rang défini
+Le rang du joueur est dans l'intervalle de rang défini (0 à 100)
 
 Alternative:
 A1: L'acteur a perdu la partie
-	En SN7, si le système determine que l'acteur est perdant
+	En SN7, si le système détermine que l'acteur est perdant
 	A1.1.Le système verifie le rang de l'acteur
 	A1.2.Le système décrémente le rang du joueur
 	A1.3.Retour SN10
@@ -56,6 +56,6 @@ A5: L'acteur accepte la revanche
 Exception:
 E1: Annulation
 	En SN3/SN4, l'acteur annule l'opération
-	E2.1.Fin d'interaction
+	E1.1.Fin d'interaction
 	
 
