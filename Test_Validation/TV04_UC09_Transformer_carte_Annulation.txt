@@ -1,0 +1,23 @@
+Auteur : ARTS Adrien
+
+Titre : Transformer carte en joyaux Annulation
+
+Contexte :
+	Le joueur annule au moment de choisir sa carte
+
+
+Entrée : 
+	aucune
+
+Scénario :
+	1. Le joueur selectionne "Transformer joyaux".
+	2. Le joueur annule.
+
+
+Résultat attendu :
+	-la collection et le montant de joyaux sont inchangés.
+
+
+Moyens de vérification :
+	- Vérification si le solde de joyaux est inchangée.
+	- Vérification si la collection est inchangée. 
