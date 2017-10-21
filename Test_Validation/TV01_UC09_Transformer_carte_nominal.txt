@@ -1,0 +1,24 @@
+Auteur : TRUBLEREAU Christopher
+
+Titre : Transformer carte en joyaux Nominal
+
+Contexte :
+	Le joueur possède la carte "Dragon Blanc" dans sa collection.
+
+
+Entrée : 
+	Une carte "Dragon Blanc" de rareté "Légendaire"
+
+Scénario :
+	1. Le joueur selectionne "Transformer joyaux".
+	2. Le joueur choisit la carte "Dragon Blanc" à transformer et valide.
+	3. Le joueur choisit de terminer.
+
+
+Résultat attendu :
+	- Conversion de la carte "Dragon Blanc" en 20 joyaux
+	- Suppression de la carte "Dragon Blanc" de la collection du joueur
+
+Moyens de vérification :
+	- Vérification si le solde de joyaux a été incrémenté de +20.
+	- Vérification dans la collection si "Dragon Blanc" n'est plus présent. 
