@@ -1,0 +1,18 @@
+Auteurs: Chao LIN
+
+Titre: Perd une partie
+Contexte:
+	Joueur connecté, rang du joueur>0, partie jouée dans la journée < 9
+Entrée:
+Scénario:
+	1.Le joueur selectionne "Jouer"
+	2.Le joueur choisit un deck et valide
+	3.Le joueur décline pour une autre partie
+Resultat attendu:
+	Le nombre de partie jouée par le joueur augmente.
+	Le rang du joueur décrémente de 1
+Moyens de vérification:
+	Visuel => affichage de confirmation
+	Rang diminué de 1 dans les interfaces où le rang du joueur y figurent
+	Nombre de parties à jouer pour obtenir un pack gratuit moins 1
+	

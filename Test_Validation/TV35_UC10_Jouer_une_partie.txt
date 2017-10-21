@@ -1,0 +1,20 @@
+Auteurs: Chao LIN
+
+Titre: Gagne deux parties
+Contexte:
+	Joueur connecté, rang du joueur<99, partie jouée dans la journée < 8
+Entrée:
+Scénario:
+	1.Le joueur selectionne "Jouer"
+	2.Le joueur choisit un deck et valide
+	3.Le joueur accepte pour une autre partie
+	2.Le joueur choisit un deck et valide
+	3.Le joueur décline pour une autre partie
+Resultat attendu:
+	Le nombre de partie jouée par le joueur augmente de 2.
+	Le rang du joueur augmente de 2.
+Moyens de vérification:
+	Visuel => affichage de confirmation
+	Augmentation du rang dans les interfaces où le rang du joueur y figurent
+	Nombre de parties à jouer pour obtenir un pack gratuit moins 2
+	

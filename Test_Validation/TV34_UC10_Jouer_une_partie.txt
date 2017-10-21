@@ -1,0 +1,19 @@
+Auteurs: Chao LIN
+
+Titre: Gagne une partie et obtient un pack gratuit
+Contexte:
+	Joueur connecté , son rang du joueur<100, partie jouée dans la journée = 9
+Entrée:
+Scénario:
+	1.Le joueur selectionne "Jouer"
+	2.Le joueur choisit un deck et valide
+	3.Le joueur décline pour une autre partie
+Resultat attendu:
+	Le nombre de partie jouée par le joueur augmente.
+	Un pack gratuit est attribué au joueur
+	Le rang du joueur augmente de 1.
+Moyens de vérification:
+	Visuel => affichage de confirmation
+	Lister les packs du joueur
+	Augmentation du rang dans les interfaces où le rang du joueur y figurent
+	
