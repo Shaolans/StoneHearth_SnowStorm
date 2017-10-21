@@ -4,14 +4,14 @@ Titre: Acheter plusieurs cartes
 Contexte:
   La joueuse "Alice" est connectée (cas nominal du TV de UC_04)
 Entrée:
-  Carte = "Black Lotus"
-  Carte = "Blue Eyes White Dragon"
 Scénario:
   1. L'acteur sélectionne "Boutique de cartes"
-  2. L'acteur sélectionne la carte de son choix
-  3. L'acteur sélectionne "Acheter une autre carte"
-  4. L'acteur sélectionne la carte de son choix
-  5. L'acteur décline l'achat d'une autre carte
+  2. L'acteur sélectionne la carte "Black Lotus"
+  3. L'acteur valide le panier
+  4. L'acteur sélectionne "Acheter une autre carte"
+  5. L'acteur sélectionne la carte "Blue Eyes White Dragon"
+  6. L'acteur valide le panier
+  7. L'acteur décline l'achat d'une autre carte
 Résultat attendu:
   Deux achats ont été effectués, articles reçus 
     (Carte "Black Lotus" et Carte "Blue Eyes White Dragon")
