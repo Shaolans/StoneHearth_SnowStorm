@@ -2,7 +2,7 @@ Auteurs: Chao LIN
 
 Titre: Se déconnecter Nominal
 Contexte:
-	Le joueur "Bob" s'est déjà connecté et il souhaite se déconnecter.
+	Le joueur "Bob" s'est déjà connecté
 Entrée:
 Scénario:
 	1. L'acteur selectionne "Se déconnecter".
