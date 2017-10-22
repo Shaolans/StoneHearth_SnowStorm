@@ -2,7 +2,6 @@ Auteurs: Chao LIN - Ling-Chun SO
 
 Titre: Renseigner CB mauvaise saisie
 Contexte:
-	"Bob" veut renseigné sa CB
 	Coordonées bancaires de "Bob" non renseignées
 Entrée:
 	Carte Bancaire1 = "4242424242424242"
