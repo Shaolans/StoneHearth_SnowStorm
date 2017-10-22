@@ -2,20 +2,18 @@ Auteurs: Chao LIN
 
 Titre: Se connecter avec mot de passe erroné
 Contexte:
-	"Bob" a déja créer son compte (UC_03)
-	"Bob" souhaite se connecter
+	Il existe déjà un compte "Bob" (TV08_UC_03)
 Entrée:
 	Pseudo = "Bob"
 	MDP = "Bqb"
-	MDP = "Bab"
 Scénario:
 	1. L'acteur selectionne "Se connecter".
-	2. L'acteur saisit son pseudo.
-	3. L'acteur saisit son mot de passe.
-	4. L'acteur saisit son mot de passe.
+	2. L'acteur saisit Pseudo.
+	3. L'acteur saisit MDP.
 Resultat attendu:
-	Connection de "Bob" réussi, "Bob" accède à son compte
+	Connexion du compte à échoué
+	Pas d'accès au menu principal du jeu
 Moyens de vérification:
-	Visuel => affichage de confirmation
-		   => affichage de l'interface d'accueil du jeu
+	Visuel => affichage d'échec
+		   => affichage de l'écran de connexion
 	
