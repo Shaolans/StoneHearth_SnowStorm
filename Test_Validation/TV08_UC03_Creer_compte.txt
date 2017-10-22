@@ -2,7 +2,6 @@ Auteurs: Chao LIN - Ling-Chun SO
 
 Titre: Creer compte Nominal
 Contexte:
-	Visiteur "Bob" souhaite créer un compte
 	Pas de compte au nom de "Bob"
 Entrée:
 	Pseudo = "Bob"

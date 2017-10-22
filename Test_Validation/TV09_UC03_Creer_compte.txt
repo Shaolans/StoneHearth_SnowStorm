@@ -2,7 +2,6 @@ Auteurs: Chao LIN - Ling-Chun SO
 
 Titre: Creer compte avec pseudo déja utilisé 
 Contexte:
-	Visiteur "Bob" souhaite créer un compte
 	Compte au nom de "Bob" déjà présent
 Entrée:
 	Pseudo = "Bob"
