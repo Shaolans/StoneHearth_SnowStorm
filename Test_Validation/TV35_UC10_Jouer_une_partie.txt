@@ -2,20 +2,20 @@ Auteurs: Chao LIN
 
 Titre: Gagne deux parties
 Contexte:
-	Joueur connecté, rang du joueur<99, parties jouées dans la journée < 8
+	Joueur connecté, rang du joueur<99, nombre de partie avant pack > 2
 Entrée:
 	Deck = "Cartes Légendaires"
 	Deck = "Cartes Légendaires"
 Scénario:
-	1.Le joueur selectionne "Jouer"
-	2.Le joueur choisit le deck "Cartes Légendaires" et valide
-	3.Le joueur accepte pour une autre partie
-	2.Le joueur choisit le deck "Cartes Légendaires" et valide
-	3.Le joueur décline pour une autre partie
+	1.L'acteur selectionne "Jouer"
+	2.L'acteur choisit le deck "Cartes Légendaires" et valide
+	3.L'acteur accepte pour une autre partie
+	2.L'acteur choisit le deck "Cartes Légendaires" et valide
+	3.L'acteur décline pour une autre partie
 Resultat attendu:
-	Le nombre de partie jouée par le joueur augmente de 2.
+	Le nombre de partie avant pack décrémente de 2.
 	Le rang du joueur augmente de 2.
 Moyens de vérification:
 	Visuel => affichage du système
 	Afficher le rang du joueur
-	Afficher le nombre de parties dans la journée
+	Afficher le nombre de partie avant pack.

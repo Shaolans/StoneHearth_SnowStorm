@@ -2,15 +2,15 @@ Auteurs: Chao LIN
 
 Titre: Gagne une partie avec rang max 
 Contexte:
-	Joueur connecté , son rang est de 100, parties jouées dans la journée < 9
+	Joueur connecté , son rang est de 100, nombre de partie avant pack > 1
 Entrée:
 	Deck = "Cartes Légendaires"
 Scénario:
-	1.Le joueur selectionne "Jouer"
-	2.Le joueur choisit le deck "Cartes Légendaires" et valide
-	3.Le joueur décline pour une autre partie
+	1.L'acteur selectionne "Jouer"
+	2.L'acteur choisit le deck "Cartes Légendaires" et valide
+	3.L'acteur décline pour une autre partie
 Resultat attendu:
-	Le nombre de partie jouée par le joueur augmente de 1.
+	Le nombre de partie avant pack décrémente de 1.
 Moyens de vérification:
 	Visuel => affichage du système
-	Afficher le nombre de parties dans la journée
+	Afficher le nombre de partie avant pack.

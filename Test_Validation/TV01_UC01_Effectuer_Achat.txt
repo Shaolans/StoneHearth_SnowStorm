@@ -3,7 +3,7 @@ Auteurs: Chao LIN - Ling-Chun SO
 Titre: Effectuer un achat Nominal
 Contexte:
 	Le joueur "Bob" est connecté (cas nominal du TV de UC_04)
-	Coordonées bancaires de Bob renseignées, solde suffisant > 2€
+	Coordonées bancaires de Bob renseignées, solde suffisant >= 2€
 Entrée:
 	Cryptogramme = "740"
 Scénario:
@@ -15,4 +15,5 @@ Resultat attendu:
 	Un achat a été effectué, un emplacement de deck débloqué, débit au compte bancaire de "Bob" de 2€
 Moyens de vérification:
 	Visuel => affichage de confirmation d'achat
-		   => emplacement supplémentaire dans l'interface de deck
+	Interface de deck
+	Relevé de compte bancaire
