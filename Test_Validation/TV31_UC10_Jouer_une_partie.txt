@@ -15,4 +15,4 @@ Resultat attendu:
 Moyens de vérification:
 	Visuel => affichage du système
 	Afficher le rang du joueur
-	Afficher le nombre de parties restant à jouer pour obtenir un pack gratuit du joueur
+	Afficher le nombre de parties dans la journée

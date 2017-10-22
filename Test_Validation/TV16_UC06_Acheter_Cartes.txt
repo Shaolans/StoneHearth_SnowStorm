@@ -18,5 +18,5 @@ Résultat attendu:
   Le nombre de joyaux diminue de 250
 Moyens de vérification:
   Visuel => confirmation
-  Lister les cartes que possède Alice
+  Cartes disponible lorsqu'on compose un deck.
   Afficher le solde de joyaux (nombre de joyaux diminué)

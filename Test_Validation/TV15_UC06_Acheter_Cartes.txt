@@ -6,7 +6,7 @@ Contexte:
 Entrée:
   Carte rare = "Black Lotus"
 Scénario:
-  1. L'acteur sélectionne "Boutique de cartes"
+  1. L'acteur sélectionne "Acheter carte"
   2. L'acteur sélectionne la carte rare "Black Lotus" et valide
   3. L'acteur décline l'achat d'une autre carte
 Résultat attendu:
@@ -14,6 +14,6 @@ Résultat attendu:
   Le nombre de joyaux diminue de 50
 Moyens de vérification:
   Visuel => confirmation
-  Lister les cartes que possède Alice
-  Afficher le solde de joyaux (nombre de joyaux diminué)
+  Carte disponible lorsqu'on compose un deck.
+  Afficher le solde de joyaux (nombre de joyaux diminué de 50)
   

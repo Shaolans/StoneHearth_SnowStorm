@@ -5,6 +5,7 @@ Contexte:
 	Joueur connecté, rang du joueur<99, parties jouées dans la journée < 8
 Entrée:
 	Deck = "Cartes Légendaires"
+	Deck = "Cartes Légendaires"
 Scénario:
 	1.Le joueur selectionne "Jouer"
 	2.Le joueur choisit le deck "Cartes Légendaires" et valide
@@ -17,4 +18,4 @@ Resultat attendu:
 Moyens de vérification:
 	Visuel => affichage du système
 	Afficher le rang du joueur
-	Afficher le nombre de parties restant à jouer pour obtenir un pack gratuit du joueur
+	Afficher le nombre de parties dans la journée

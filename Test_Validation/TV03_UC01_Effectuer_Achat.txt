@@ -4,6 +4,7 @@ Titre: Achat avec les coordonées bancaires non renseignées
 Contexte:
 	Le joueur "Bob" est connecté (cas nominal du TV de UC_04)
 	Coordonées bancaires de Bob non renseignées
+	Carte Bancaire "4242424242424242" a un solde > 2€
 Entrée:
 	Carte Bancaire = "4242424242424242"
 	Date expiration = "11/17"
@@ -17,7 +18,7 @@ Scénario:
 	6.L'acteur saisit son cryptogramme
 Resultat attendu:
 	Un achat a été effectué, article reçu (emplacement supplémentaire)
-	Coordonée bancaire renseignée
+	Coordonée bancaire renseignée, débit au compte bancaire "4242424242424242" de 2€
 Moyens de vérification:
 	Visuel => affichage de confirmation d'achat
 		   => emplacement supplémentaire dans l'interface de deck

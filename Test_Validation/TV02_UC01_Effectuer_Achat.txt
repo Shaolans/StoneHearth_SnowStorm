@@ -3,7 +3,7 @@ Auteurs: Chao LIN - Ling-Chun SO
 Titre: Acheter un pack
 Contexte:
 	Le joueur "Bob" est connecté (cas nominal du TV de UC_04)
-	Coordonées bancaires de Bob renseignées
+	Coordonées bancaires de Bob renseignées , solde suffisant > 1,39€
 Entrée:
 	Cryptogramme = "740"
 Scénario:
@@ -12,8 +12,8 @@ Scénario:
 	3.L'acteur valide son achat
 	4.L'acteur saisit son cryptogramme
 Resultat attendu:
-	Un achat a été effectué, article reçu (pack supplémentaire)
+	Un achat a été effectué, article reçu (pack supplémentaire), débit au compte bancaire de "Bob" de 1,39€
 Moyens de vérification:
 	Visuel => affichage de confirmation d'achat
-		   => pack supplémentaire ouvrable
-		   => bouton "ouvrir pack" non grisé
+	Lister les packs du joueur "Bob"
+	
