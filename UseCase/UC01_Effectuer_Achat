@@ -8,7 +8,7 @@ Scénario Nominal :
 2. Le système affiche "Choisir article".
 3. L'acteur choisit "Acheter emplacement".
 4. Le système vérifie si l'acteur a enregistré sa carte bleue.
-5. Le système affiche le prix de l'article (2€ l'emplacement), et affiche "Valider achat ?".
+5. Le système affiche le prix de l'article (2€/3$ l'emplacement), et affiche "Valider achat ?".
 6. L'acteur valide son achat.
 7. Le système affiche "Cryptogramme ?"
 8. L'acteur saisit son cryptogramme.
@@ -21,7 +21,7 @@ L'acteur a bien reçu son article.
 Alternatives :
 A1. Achat d'un pack :
 En SN3, si l'acteur choisit "Acheter pack":
-A1.1. Le système affiche le prix de l'article (1.39€ le pack), et affiche "Valider achat ?".
+A1.1. Le système affiche le prix de l'article (1.39€/1.99$ le pack), et affiche "Valider achat ?".
 A1.2. Retour SN4.
 
 A2. Carte non enregistrée :
